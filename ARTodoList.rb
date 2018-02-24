@@ -16,18 +16,24 @@ class ARTodoList
 
     TableCreator.create(db)
 
-    action = ARGV[0]
-    case action
-    when Actions::CREATE
-      Actions.create
-    when Actions::READ
-      puts "show"
-    when Actions::UPDATE
-      puts "update"
-    when Actions::DELETE
-      puts "delete"
-    else
-      syntax
+    begin
+      
+      action = ARGV[0]
+      case action
+      when Actions::CREATE
+        Actions.create
+      when Actions::READ
+        Actions.read
+      when Actions::UPDATE
+        puts "update"
+      when Actions::DELETE
+        puts "delete"
+      else
+        syntax
+      end
+
+    rescue => e
+      puts "Message: #{e.message}"
     end
 
     puts "finish"
@@ -41,7 +47,7 @@ class ARTodoList
 
         <action>
           create
-          read
+          show
           update
           delete
     EOS
