@@ -1,11 +1,12 @@
 # ARTodoList
 Todo list with Active Record
       
-ruby ARTodoList.rb <action>
+ruby ARTodoList.rb &lt;action&gt;
 
-<action>
+&lt;actions&gt;
+
 - create
 - show
-- update <index>
-- delete <indexes split by space>
+- update &lt;index&gt;
+- delete &lt;indexes split by space&gt;
  
