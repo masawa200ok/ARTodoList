@@ -25,9 +25,9 @@ class ARTodoList
       when Actions::READ
         Actions.read
       when Actions::UPDATE
-        puts "update"
+        Actions.update(ARGV[1])
       when Actions::DELETE
-        puts "delete"
+        Actions.delete(ARGV[1, ARGV.length - 1])
       else
         syntax
       end
