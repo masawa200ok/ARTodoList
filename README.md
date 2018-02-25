@@ -8,4 +8,4 @@ ruby ARTodoList.rb <action>
 - show
 - update <index>
 - delete <indexes split by space>
-  
+ 
