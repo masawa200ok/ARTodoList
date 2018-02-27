@@ -16,12 +16,23 @@ class Actions
     ).save
   end
 
-  def self.read
+  def self.read(filter = nil)
     tasks = get_tasks
     index = 0
     tasks.each do |t|
       index += 1
-      puts "Index: #{index} = #{t.to_s}"
+      if filter
+        if t.title.include?(filter) || t.body.include?(filter)
+          # show
+        else
+          next
+        end
+      end
+      puts "Index    : #{index}"
+      puts "Priority : #{t.priority}"
+      puts "Title    : #{t.title}"
+      puts "Body     : #{t.body}"
+      puts "-" * 50
     end
   end
 

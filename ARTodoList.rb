@@ -23,7 +23,7 @@ class ARTodoList
       when Actions::CREATE
         Actions.create
       when Actions::READ
-        Actions.read
+        Actions.read(ARGV[1])
       when Actions::UPDATE
         Actions.update(ARGV[1])
       when Actions::DELETE
@@ -48,8 +48,8 @@ class ARTodoList
         <action>
           create
           show
-          update
-          delete
+          update <index>
+          delete <indexes splited by space>
     EOS
     puts text
   end
