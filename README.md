@@ -28,3 +28,6 @@ filter with title or body by filter-word
 
 - $ ruby ARTodoList.rb delete 3
 
+&lt;blog&gt;
+
+[(PG)RailsではなくActiveRecordを単体で使う](https://www.masawa200ok.net/2018/02/26/pgrails%e3%81%a7%e3%81%af%e3%81%aa%e3%81%8factiverecord%e3%82%92%e5%8d%98%e4%bd%93%e3%81%a7%e4%bd%bf%e3%81%86/)
