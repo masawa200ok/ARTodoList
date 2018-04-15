@@ -1,6 +1,9 @@
 # ARTodoList
 Todo list with Active Record
 
+&lt;required&gt;  
+$ gem install activerecord
+
 &lt;syntax&gt;
 
 ruby ARTodoList.rb &lt;action&gt;
